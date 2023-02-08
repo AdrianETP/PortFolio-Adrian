@@ -9,22 +9,6 @@ export interface Props {
 const { title, body, image, url  , image2} = Astro.props;
 ---
 
-<script>
-    class UrlTravel extends HTMLElement {
-        constructor() {
-            super();
-
-            // Read the message from the data attribute.
-            const url = this.dataset.url;
-            const button = this.querySelector("button");
-            button?.addEventListener("click", () => {
-                window.open(url);
-            });
-        }
-    }
-
-    customElements.define("url-travel", UrlTravel);
-</script>
 
 <div class="card bg-base-200 card-compact w-96 h-[400px] overflow-hidden relative shadow-2xl mt-10">
     
@@ -36,9 +20,9 @@ const { title, body, image, url  , image2} = Astro.props;
         <p class="mb-2">{body}</p>
         <div class="card-actions absolute bottom-0 left-5 right-5 flex  justify-between ">
         <img class="w-16 rounded-lg pb-5"src={image} alt="image"/>
-        <url-travel data-url={url}>
+        <a href={url}>
         <button class="btn btn-secondary"> check it out</button>
-        </url-travel>
+        </a>
         </div>
     </div>
 </div>

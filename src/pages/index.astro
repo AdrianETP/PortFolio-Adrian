@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Navbar from "../components/Navbar.astro";
-import Org from '../components/Org.jsx'
+import Org from "../components/Org.jsx";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -16,7 +16,9 @@ import Org from '../components/Org.jsx'
                         class="max-w-sm rounded-lg shadow-2xl"
                     />
                     <div>
-                        <h1 class="text-5xl font-bold">Hi, I am Adrian Treviño</h1>
+                        <h1 class="text-5xl font-bold">
+                            Hi, I am Adrian Treviño
+                        </h1>
                         <p class="py-6 text-lg">
                             I'm a softmore computer science student at <a
                                 class="text-primary">Tecnologico de Monterrey</a
@@ -24,18 +26,23 @@ import Org from '../components/Org.jsx'
                             enthuciaist that hopes to change the world one line
                             of code at a time
                         </p>
-                        <button class="btn btn-accent"
-                            >Let's get in Contact</button
+                        <a href="#contact" class="btn btn-accent"
+                            >Let's get in Contact</a
                         >
                     </div>
                 </div>
             </div>
         </section>
         <section class="py-10 bg-base-100">
-            <h1 class="text-5xl font-bold text-center">
+            <h1 class="text-5xl font-bold text-center mb-5">
                 My remarkable projects
             </h1>
-            <div class="w-full  p-10 flex justify-evenly flex-wrap">
+            <p class="text-xl text-center">
+                The personal projects I'm most proud of
+            </p>
+            <div
+                class="w-full px-10 py-5 flex justify-evenly flex-wrap min-h-[65vh] items-center"
+            >
                 <Card
                     title="Autocolor.nvim"
                     image2="/AutoColor.png"
@@ -59,10 +66,50 @@ import Org from '../components/Org.jsx'
                 />
             </div>
         </section>
-        <section class="w-full h-[80vh] bg-base-100 pt-10">
-            <h1 class="text-3xl font-bold text-center">Companies/Organizations I have worked with</h1>
+        <section class="w-full min-h-[80vh] bg-base-200 pt-10">
+            <h1 class="text-3xl font-bold text-center">
+                Companies/Organizations I have worked with
+            </h1>
             <Org client:load />
-            
+        </section>
+        <section
+            class="w-full min-h-[20vh] bg-base-100 flex flex-col justify-evenly items-center"
+            id="contact"
+        >
+            <h1 class="text-center text-3xl font-bold">Let's get in contact</h1>
+            <div class="flex justify-evenly w-full">
+                <a href="https://api.whatsapp.com/send?phone=528181819423">
+                    <button class="btn btn-success">
+                        Whatsapp
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/152/152740.png"
+                            alt=""
+                            class="w-5 ml-2"
+                        />
+                    </button>
+                </a>
+                <a href="mailto:eduardotrevinop@yahoo.com.mx">
+                    <button class="btn btn-info">
+                        Email
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/542/542689.png"
+                            alt=""
+                            class="w-5 ml-2"
+                        />
+                    </button>
+                </a>
+
+                <a href="https://discord.com/users/AdrianETP#2470">
+                    <button class="btn bg-purple-300 text-black border-purple-300 hover:bg-purple-300 hover:border-purple-300  ">
+                        Discord
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/4945/4945914.png"
+                            alt=""
+                            class="w-5 ml-2"
+                        />
+                    </button>
+                </a>
+            </div>
         </section>
     </main>
 </Layout>
