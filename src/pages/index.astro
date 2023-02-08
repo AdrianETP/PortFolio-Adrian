@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Navbar from "../components/Navbar.astro";
+import Org from '../components/Org.jsx'
+---
+
+<Layout title="Welcome to Astro.">
+    <main class="h-[200vh]">
+        <Navbar />
+        <section>
+            <div class="hero min-h-[80vh] bg-base-200">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img
+                        src="/Adrian.JPG"
+                        class="max-w-sm rounded-lg shadow-2xl"
+                    />
+                    <div>
+                        <h1 class="text-5xl font-bold">Hi, I am Adrian Treviño</h1>
+                        <p class="py-6 text-lg">
+                            I'm a softmore computer science student at <a
+                                class="text-primary">Tecnologico de Monterrey</a
+                            >, musician, React web developer, and a neovim/cli
+                            enthuciaist that hopes to change the world one line
+                            of code at a time
+                        </p>
+                        <button class="btn btn-accent"
+                            >Let's get in Contact</button
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 bg-base-100">
+            <h1 class="text-5xl font-bold text-center">
+                My remarkable projects
+            </h1>
+            <div class="w-full  p-10 flex justify-evenly flex-wrap">
+                <Card
+                    title="Autocolor.nvim"
+                    image2="/AutoColor.png"
+                    body="an automatic theme changer for neovim"
+                    image="/neovim.JPG"
+                    url="https://github.com/AdrianETP/AutoColor.nvim"
+                />
+                <Card
+                    title="Markdownie"
+                    image2="/Markdownie.png"
+                    body="an open-source markdown editor on web"
+                    image="/MDLogo.png"
+                    url="https://adrianetp.github.io/Markdownie/"
+                />
+                <Card
+                    title="Chemistry AR"
+                    image2="/holograma.jpg"
+                    body="a web app to learn about chemistry through AR"
+                    image="../../public/Cloro.png"
+                    url="https://github.com/AdrianETP/ChemistryAR"
+                />
+            </div>
+        </section>
+        <section class="w-full h-[80vh] bg-base-100 pt-10">
+            <h1 class="text-3xl font-bold text-center">Companies/Organizations I have worked with</h1>
+            <Org client:load />
+            
+        </section>
+    </main>
+</Layout>
