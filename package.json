@@ -1,6 +1,7 @@
 {
   "name": "@example/basics",
   "type": "module",
+  "homepage":"https://adrianetp.github.io/PortFolio-Adrian",
   "version": "0.0.1",
   "private": true,
   "scripts": {
