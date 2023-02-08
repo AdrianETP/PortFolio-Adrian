@@ -9,6 +9,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-    site: 'https://adrianetp.github.io/PortFolio-Adrian',
-    base:'/'
+    site: 'https://adrianetp.github.io/',
+    base:'/PortFolio-Adrian'
 });

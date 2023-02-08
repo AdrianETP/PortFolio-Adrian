@@ -6,7 +6,7 @@ function Org() {
         <div className='flex flex-col justify-center items-center'>
             <div className='avatar w-40 h-40 mb-10 border-accent border-2 border-solid rounded-full'>
                 <div className='rounded-full'>
-                    <img src='/LogoCyber.png' />
+                    <img src='/PortFolio-Adrian/LogoCyber.png' />
                 </div>
             </div>
 
@@ -24,7 +24,7 @@ function Org() {
         <div className='flex flex-col justify-center items-center'>
             <div className='avatar w-40 h-40 mb-10 border-accent border-2 border-solid rounded-full'>
                 <div className='rounded-full'>
-                    <img src='/P99.jpeg' />
+                    <img src='/PortFolio-Adrian/P99.jpeg' />
                 </div>
             </div>
 
@@ -42,7 +42,7 @@ function Org() {
         <div className='flex flex-col justify-center items-center'>
             <div className='avatar w-40 h-40 mb-10 border-accent border-2 border-solid rounded-full'>
                 <div className='rounded-full'>
-                    <img src='/Peninsula.png' />
+                    <img src='/PortFolio-Adrian/Peninsula.png' />
                 </div>
             </div>
 
