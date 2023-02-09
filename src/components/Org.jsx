@@ -58,7 +58,7 @@ function Org() {
     )
     const [content, setContent] = useState(proyecto99)
     return (
-        <div className="w-full min-h-[80vh] mt-10 flex flex-col justify-between items-center">
+        <div className="w-full min-h-[80vh] mt-10 flex flex-col justify-between items-center pb-10">
             <div id="info h-3/4 w-screen flex justify-center">
                 {content}
             </div>
